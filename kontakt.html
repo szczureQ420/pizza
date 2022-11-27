@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logo.png" type="image/icon type">
+  <title>Pizzaiolo - kontakt</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="myul">
+        <li><a href="index.html">Pizzaiolo</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="formularz">
+    <h2>KONTAKT</h2>
+    <p>Opinia naszych Gości jest dla nas bardzo ważna, cieszy nas, że chcesz się z nami skontaktować. Jeśli masz pytania dotyczące Pizzaiolo zadaj je tutaj!</p>
+    <form>
+      Imię
+      <input type="text" id="imie" placeholder="Jan" name="imie"><br>
+      Nazwisko
+      <input type="text" id="nazwisko" placeholder="Kowalski" name="nazwisko"><br>
+      Sposób dokonania zamówienia
+      <select name="sposob_zamowienia">
+        <option selected>W restauracji</option>
+        <option>Na wynos</option>
+        <option>Dostawa</option>
+        <option>Nie dotyczy</option>
+      </select><br>
+      <textarea placeholder="Treść wiadomości" cols="50" rows="8" name="commentk"></textarea><br>
+      <input type="submit" value="Wyślij" class="btnsubmit" id="wyslij" onclick="sss()">
+    </form>
+  </div>
+  <script>
+    function sss(){
+      return confirm('Pomyślnie przesłano formularz!');
+    }
+  </script>
+</body>
+</html>

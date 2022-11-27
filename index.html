@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleindex.css">
+  <link rel="icon" href="img/logo.png" type="image/icon type">
+  <title>Pizzaiolo</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="myul">
+        <li><a href="#">Pizzaiolo</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <h2 class="h2index">Zamów swoją ulubioną pizzę!</h2>
+  </header>
+  <div class="pizza1">
+    <img src="img/pizza1.png" alt="pizza1" width="400" height="300" style="float: left; border-radius: 10px; margin-left: 10px;">
+    <img src="img/pizza2.jpg" alt="pizza2" width="400" height="300" style="float: right; border-radius: 10px; margin-right: 10px;">
+  </div>
+  <div class="zamowienie">
+    <form method="get">
+      Imię <input type="text" placeholder="Jan" id="name" name="name"><br>
+      Nazwisko <input type="text" placeholder="Kowalski" id="surname" name="surname"><br>
+      Adres e-mail <input type="email" placeholder="jan123@pizzaiolo.pl" id="email" name="email"><br>
+      Numer telefonu <input type="number" maxlength="9" placeholder="123456789" id="telefon" name="phonenumber"><br>
+      Ulica <input type="text" placeholder="Szczecińska" id="street" name="street"><br>
+      Numer domu <input type="text" placeholder="16" id="nrdomu" name="nrdomu"><br>
+      Numer mieszkania <input type="text" placeholder="2" id="nrlokalu" name="nrlokalu"><br>
+      Miejscowość <input type="text" placeholder="Słupsk" id="city" name="city"><br>
+      Kod pocztowy <input type="text" placeholder="76-200" id="pcode" name="pcode"><br>
+      Wybierz rodzaj pizzy <select name="pizza_selected">
+        <option selected>Margherita (oregano)</option>
+        <option>Muchomorek (pieczarki)</option>
+        <option>Słoneczna (szynka)</option>
+        <option>Szefa (farsz z patelni)</option>
+        <option>Hawai (szynka, ananas)</option>
+        <option>Tradycyjna (szynka, pieczarki)</option>
+        <option>Brokułowa (kurczak, brokuły)</option>
+        <option>Gyros (gyros, pomidor, ogórek)</option>
+        <option>Fantazja (szynka, salami, bekon)</option>
+        <option>Kameleon (pięć dowolnych składników)</option>
+      </select><br>
+      Sos <select class="sos" name="sauce_selected">
+        <option>Ketchup</option>
+        <option>Łagodny</option>
+        <option>Czosnkowy</option>
+        <option>Ostry</option>
+        <option>Tysiąca wysp</option>
+      </select><br>
+      Ser w brzegach <input type="checkbox" id="ser" name="cheese"><br>
+      <textarea cols="50" rows="8" placeholder="Infomacje dla pizzerii i/lub kuriera" name="comment"></textarea><br>
+      <input type="submit" value="Wyślij" class="btnsubmit2" id="wyslij" onclick="ss()">
+      <input type="reset" value="Resetuj" class="btnreset" id="reset">
+    </form>
+  </div>
+  <script>
+    function ss(){
+      return confirm('Przyjęliśmy Twoje zamówienie!');
+    }
+  </script>
+</body>
+</html>
